@@ -1,9 +1,9 @@
 # FastAPI
 **Author: Sergei Kalyaev**  
-Project for create and download database
+Проект для созданий и скачиваний датабаз
 
-## Description
-I used:  
+## Описание
+В ходе работы я использовал:  
 - from fastapi import FastAPI, APIRouter, Depends
 - from contextlib import asynccontextmanager
 - from sqlalchemy import select
@@ -12,25 +12,25 @@ I used:
 - from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 - from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
-router to get and add database  
-sqlalchemy (DeclarativeBase) to create and delete tables  
-repository.py for get tables from database  
-lifespan and general main.py for run web app  
-schemas.py for simplifications and comfort  
+Файлик `router` получения и добавления датабаз  
+`sqlalchemy` (DeclarativeBase) для взаимодействая (Удаление, создание) с датабазами   
+`repository.py` для получения таблиц с датабазы
+`lifespan` и `main.py` для запуска Web приложения
+`schemas.py` для удобства  
 
-## To run it  
+## Чтобы запустить 
 - git clone `url repository`
 - pip install FastAPI uvicorn sqlalchemy aiosqlite greenlet
 - cd FastAPI
 - uvicorn main:app
 
-## Technology Stack  
+## Стэк 
 - ![Python](https://img.shields.io/badge/-Python-blue?style=flat-square&logo=python)  
 - ![FastAPI](https://img.shields.io/badge/-FastAPI-green?style=flat-square&logo=fastapi)  
 - ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-blue?style=flat-square&logo=sqlalchemy)  
 
 
-## Screenshots  
+## Скрины  
 <img src="screenshots/scr1.png" alt="Screenshot" width="400" height="200">  
 <img src="screenshots/scr3.png" alt="Screenshot" width="400" height="200">   
 <img src="screenshots/scr2.png" alt="Screenshot" width="400" height="200">  
