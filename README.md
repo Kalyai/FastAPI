@@ -1,6 +1,6 @@
 # FastAPI
 **Author: Sergei Kalyaev**  
-Проект для созданий и скачиваний датабаз
+Проект для созданий и скачиваний баз данных
 
 ## Описание
 В ходе работы я использовал:  
@@ -12,10 +12,10 @@
 - from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 - from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
-Файлик `router` получения и добавления датабаз  
-`sqlalchemy` (DeclarativeBase) для взаимодействая (Удаление, создание) с датабазами   
-`repository.py` для получения таблиц с датабазы
-`lifespan` и `main.py` для запуска Web приложения
+Файлик `router` получения и добавления баз данных   
+`sqlalchemy` (DeclarativeBase) для взаимодействая (Удаление, создание) с базами данных     
+`repository.py` для получения таблиц с баз данных  
+`lifespan` и `main.py` для запуска Web приложения  
 `schemas.py` для удобства  
 
 ## Чтобы запустить 
